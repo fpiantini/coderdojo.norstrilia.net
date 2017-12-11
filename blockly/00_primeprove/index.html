@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Esperimenti con Blockly</title>
+
+    <!-- Style sheet inclusion -->
+    <link rel="stylesheet" type="text/css" href="blockly.css" />
+
+    <script type="text/javascript" src="myblockly.js"></script>
+
+  </head>
+
+  <body>
+    <table width="100%" height="99%">
+      <tr>
+        <td>
+          <h1>Esperimenti <a href="https://developers.google.com/blockly/">Blockly</a></h1>
+
+          <p>
+            Dimostrazione di varie funzionalit&agrave; Blockly, tra cui l'
+            <a href="https://developers.google.com/blockly/installation/injecting-resizable">inserimento all'interno di un iframe ridimensionabile</a>, la
+            <a href="https://developers.google.com/blockly/installation/toolbox">personalizzazione della toolbox</a> e la
+            <a href="https://developers.google.com/blockly/installation/code-generators">generazione di codice JavaScript</a>.
+          </p>
+          <p>
+            Ancora da mettere a posto: non si riesce a far comparire il cestino...
+          </p>
+
+            <button onclick="showCode()">Mostra codice JavaScript</button>
+            <button onclick="runCode()">Esegui codice JavaScript</button>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td height="99%">
+          <iframe src="frame.html"></iframe>
+        </td>
+      </tr>
+    </table>
+
+  </body>
+</html>
+
+

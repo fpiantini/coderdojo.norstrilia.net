@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="it" lang="it">
+
+<head>
+
+   <title>
+   Norstrilia.Net - Coderdojo experiments
+   </title>
+
+   <!-- Style sheet inclusion -->
+   <link rel="stylesheet" type="text/css" href="/norstrilia.css" />
+
+   <!-- Meta informations. Change to actual values -->
+   <meta name="author" content="Rod McBan" />
+
+   <meta name="revised" content="Rod McBan, 13/11/2014" />
+
+   <meta name="generator" content="Text Editor" />
+
+   <meta name="description" content="Norstrilia Coderdojo experiments" />
+
+   <meta name="keywords" content="Norstrilia, Coderdojo" />
+   <!-- End of Meta informations -->
+
+</head>
+
+
+<body>
+  <div id="header">
+    <h1>Norstrilia.net Coderdojo experiments</h1>
+  </div>
+
+
+  <!-- ************************************************************ -->
+  <!-- <div id="bodywithmenu"> -->
+  <div id="body">
+
+    <p>Anche su <a href="http://en.wikipedia.org/wiki/Norstrilia">Norstrilia</a>
+      c'&egrave; un <a href="https://coderdojo.com/">Coderdojo</a>,
+      a dire il vero associato con quello di
+      <a href="http://firenze.coderdojo.it/">Firenze</a>...
+    </p>
+    <h2>Javascript 3D</h2>
+    <ul>
+      <li><a href="js3d/pp_x1_1/pragpub_x1_1.html">Ciambella (toro) rotante</a>
+        Da tutorial descritto nell'articolo di Chris Strom
+        "The Anti-Cosby Approach to Teaching Kids Programming"
+        nella special issue "Teaching kids to code" di
+        <a href="http://theprosegarden.com/">PragPub</a></li>
+
+      <li><a href="js3d/pp_x1_2/pragpub_x1_2.html">Icosaedro rotante</a>. Altro esempio tratto dal libro
+        <a href="https://pragprog.com/book/csjava/3d-game-programming-for-kids">"3D Game Programming for Kids"</a>
+        di Chris Strom</li>
+      <li><a href="js3d/earth3d/Earth.html">Modello di terra ruotante</a>,
+        analizzato all'interno del Coderdojo Firenze su base di un esempio
+        nel sito della libreria <a href="http://threejs.org/">three.js</a></li>
+
+      </ul>
+
+      <h2>Blockly</h2>
+      <ul>
+        <li><a href="blockly/00_primeprove">Prime prove</a></li>
+      </ul>
+
+      <h2>HTML/CSS</h2>
+      <ul>
+        <li><a href="html/l1/pagina web .html">Prima lezione</a></li>
+      </ul>
+
+    </div>
+
+    <!--#include virtual="/incs/footer.html" -->
+
+  </body>
+
+</html>
+
+
