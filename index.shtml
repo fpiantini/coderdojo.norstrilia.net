@@ -11,12 +11,12 @@
    </title>
 
    <!-- Style sheet inclusion -->
-   <link rel="stylesheet" type="text/css" href="/norstrilia.css" />
+   <link rel="stylesheet" type="text/css" href="norstrilia.css" />
 
    <!-- Meta informations. Change to actual values -->
    <meta name="author" content="Rod McBan" />
 
-   <meta name="revised" content="Rod McBan, 13/11/2014" />
+   <meta name="revised" content="Rod McBan, 12/12/2017" />
 
    <meta name="generator" content="Text Editor" />
 
@@ -43,6 +43,16 @@
       a dire il vero associato con quello di
       <a href="http://firenze.coderdojo.it/">Firenze</a>...
     </p>
+
+    <h2>Gioco della Vita</h2>
+    <ul>
+      <li><a href="life/life.html">Gioco della vita</a>
+      sviluppato come tutorial per il Coderdojo di Firenze</li>
+    </ul>
+
+
+
+
     <h2>Javascript 3D</h2>
     <ul>
       <li><a href="js3d/pp_x1_1/pragpub_x1_1.html">Ciambella (toro) rotante</a>
@@ -72,7 +82,7 @@
 
     </div>
 
-    <!--#include virtual="/incs/footer.html" -->
+    <!--#include virtual="incs/footer.html" -->
 
   </body>
 
