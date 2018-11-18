@@ -1,7 +1,9 @@
+/*
 function blocklyLoaded(blockly) {
   // Called once Blockly is fully loaded.
   window.Blockly = blockly;
 }
+*/
 
 function showCode() {
   // Generate JavaScript code and display it.
@@ -24,11 +26,35 @@ function runCode() {
   }
 }
 
-function init() {
-  Blockly.inject(document.body,
-       {path: './', toolbox: document.getElementById('toolbox'), scrollbars: false, trashcan: true});
-       // Let the top-level application know that Blockly is ready.
-       window.parent.blocklyLoaded(Blockly);
+function prepareResizableBlockly() {
+  var blocklyArea = document.getElementById('blocklyArea');
+  var blocklyDiv = document.getElementById('blocklyDiv');
+  var workspace = Blockly.inject(blocklyDiv,
+      {toolbox: document.getElementById('toolbox')});
+  var onresize = function(e) {
+    // Compute the absolute coordinates and dimensions of blocklyArea.
+    var element = blocklyArea;
+    var x = 0;
+    var y = 0;
+    do {
+      x += element.offsetLeft;
+      y += element.offsetTop;
+      element = element.offsetParent;
+    } while (element);
+    // Position blocklyDiv over blocklyArea.
+    blocklyDiv.style.left = x + 'px';
+    blocklyDiv.style.top = y + 'px';
+    blocklyDiv.style.width = blocklyArea.offsetWidth + 'px';
+    blocklyDiv.style.height = blocklyArea.offsetHeight + 'px';
+    Blockly.svgResize(workspace);
+  };
+  window.addEventListener('resize', onresize, false);
+  onresize();
+  Blockly.svgResize(workspace);
 }
+
+prepareResizableBlockly();
+//var workspace = Blockly.inject('blocklyDiv',
+//   {toolbox: document.getElementById('toolbox')});
 
 

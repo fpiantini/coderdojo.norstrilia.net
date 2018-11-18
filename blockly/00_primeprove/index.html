@@ -7,37 +7,62 @@
     <!-- Style sheet inclusion -->
     <link rel="stylesheet" type="text/css" href="blockly.css" />
 
-    <script type="text/javascript" src="myblockly.js"></script>
+    <script src="blockly/blockly_compressed.js"></script>
+    <script src="blockly/javascript_compressed.js"></script>
+    <script src="blockly/blocks_compressed.js"></script>
+
+    <script src="blockly/msg/js/it.js"></script>
 
   </head>
 
   <body>
-    <table width="100%" height="99%">
-      <tr>
-        <td>
-          <h1>Esperimenti <a href="https://developers.google.com/blockly/">Blockly</a></h1>
+    <div class="header" id="header">
+      <h1>Experimenti Blockly</h1>
+    </div>
 
-          <p>
-            Dimostrazione di varie funzionalit&agrave; Blockly, tra cui l'
-            <a href="https://developers.google.com/blockly/installation/injecting-resizable">inserimento all'interno di un iframe ridimensionabile</a>, la
-            <a href="https://developers.google.com/blockly/installation/toolbox">personalizzazione della toolbox</a> e la
-            <a href="https://developers.google.com/blockly/installation/code-generators">generazione di codice JavaScript</a>.
-          </p>
-          <p>
-            Ancora da mettere a posto: non si riesce a far comparire il cestino...
-          </p>
+    <div class="divdark">
+      <p class="normal">
+        Dimostrazione di varie funzionalit&agrave; Blockly, tra cui l'
+        <a href="https://developers.google.com/blockly/guides/configure/web/resizable">inserimento all'interno di un iframe ridimensionabile</a>, la
+        <a href="https://developers.google.com/blockly/guides/configure/web/toolbox">personalizzazione della toolbox</a> e la
+        <a href="https://developers.google.com/blockly/guides/configure/web/code-generators">generazione di codice JavaScript</a>.
+      <button onclick="showCode()">Mostra codice JavaScript</button>
+      <button onclick="runCode()">Esegui codice JavaScript</button>
+      </p>
+    </div>
 
-            <button onclick="showCode()">Mostra codice JavaScript</button>
-            <button onclick="runCode()">Esegui codice JavaScript</button>
-          </p>
-        </td>
-      </tr>
-      <tr>
-        <td height="99%">
-          <iframe src="frame.html"></iframe>
-        </td>
-      </tr>
-    </table>
+
+    <div class="blocklyArea" id="blocklyArea">
+    <div id="blocklyDiv"></div>
+
+    <xml id="toolbox" style="display: none">
+      <category name="Controllo">
+        <block type="controls_repeat_ext"></block>
+        <block type="controls_whileUntil"></block>
+      </category>
+      <category name="Logica">
+        <block type="controls_if"></block>
+        <block type="logic_compare"></block>
+        <block type="logic_operation"></block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean"></block>
+      </category>
+      <category name="Matematica">
+        <block type="math_number"></block>
+        <block type="math_arithmetic"></block>
+        <block type="math_single"></block>
+      </category>
+      <category name="Testo">
+        <block type="text"></block>
+        <block type="text_length"></block>
+        <block type="text_print"></block>
+      </category>
+      <category name="Variabili" custom="VARIABLE"></category>
+      <category name="Funzioni" custom="PROCEDURE"></category>
+    </xml>
+
+
+    <script src="myblockly.js"></script>
 
   </body>
 </html>

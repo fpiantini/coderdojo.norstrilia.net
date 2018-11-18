@@ -1,31 +1,212 @@
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+/* ********************************************************** *
+ * * * * * * * * * * * * * *~~* * * * * * * * * * * * * * * * *
+ *                                                            *
+ * PARTE 1. Definizioni di BASE                               *
+ *                                                            *
+ * * * * * * * * * * * * * *~~* * * * * * * * * * * * * * * * *
+ * ********************************************************** */
+
+/*
+ * Solarized theme colors:
+ * $base03:    #002b36;
+ * $base02:    #073642;
+ * $base01:    #586e75;
+ * $base00:    #657b83;
+ * $base0:     #839496;
+ * $base1:     #93a1a1;
+ * $base2:     #eee8d5;
+ * $base3:     #fdf6e3;
+ * $yellow:    #b58900;
+ * $orange:    #cb4b16;
+ * $red:       #dc322f;
+ * $magenta:   #d33682;
+ * $violet:    #6c71c4;
+ * $blue:      #268bd2;
+ * $cyan:      #2aa198;
+ * $green:     #859900;
+ */
+
+:root {
+  --solar-base03-color:    #002b36;   # dark: blue navy main color
+  --solar-base02-color:    #073642;
+  --solar-base01-color:    #586e75;
+  --solar-base00-color:    #657b83;
+  --solar-base0-color:     #839496;
+  --solar-base1-color:     #93a1a1;
+  --solar-base2-color:     #eee8d5;
+  --solar-base3-color:     #fdf6e3;
+  --solar-yellow-color:    #b58900;
+  --solar-orange-color:    #cb4b16;
+  --solar-red-color:       #dc322f;
+  --solar-magenta-color:   #d33682;
+  --solar-violet-color:    #6c71c4;
+  --solar-blue-color:      #268bd2;
+  --solar-cyan-color:      #2aa198;
+  --solar-green-color:     #859900;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
 
 body {
-  background-color: #fff;
-  font-family: sans-serif;
-  margin-top: 0;
-  margin-bottom: 0;
+    color: var(--solar-base3-color);
+    background-color: var(--solar-base03-color);
+    background-size: cover;
+    background-position: center;
+    font-family: Lato;
+    font-weight: 300;
+    position: relative;
+    height: 100vh;
 }
 
-h1 {
+.header {
+  color: var(--solar-orange-color);
+  background-color: var(--solar-base2-color);
+  font-size: x-large;
+  /* color: white; */
+  /* background-color: #3E6035; */
+  border-radius: 10px;
+  margin: 20px;
+  padding-top: 0.2cm;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  padding-bottom: 0.2cm;
+  text-align: left;
+}
+
+.divdark {
+  color: var(--solar-base3-color);
+  background-color: var(--solar-base01-color);
+  text-align: left;
+  /* text-transform: uppercase; */
+  margin: 20px;
+  border-radius: 10px;
+  padding-top: 0.2cm;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  padding-bottom: 0.2cm;
+}
+
+.divlight {
+  color: var(--solar-blue-color);
+  background-color: var(--solar-base3-color);
+  text-align: left;
+  /* text-transform: uppercase; */
+  margin: 20px;
+  border-radius: 10px;
+  padding-top: 0.2cm;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  padding-bottom: 0.2cm;
+}
+
+.description {
+  padding-top: 0.5cm;
+  font-size: x-large;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.inevidence {
+  font-size: x-large;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.inevidence-light {
+  font-size: x-large;
+  font-weight: bold;
+  font-variant: small-caps;
+}
+
+.normal {
+  font-size: x-large;
   font-weight: normal;
-  font-size: 140%;
 }
 
-iframe {
-  width: 100%;
-  height: 100%;
-  border-style: solid;
-  border-color: #ddd;
-  border-width: 0 1px 1px 0;
+.italic {
+  font-size: x-large;
+  font-weight: normal;
+  font-style: italic;
 }
 
-.blocklySvg {
-  height: 100%;
-  width: 100%;
+
+.hidden {
+  display: none;
 }
+
+.header a  {
+  color: var(--solar-orange-color);
+  background-color: var(--solar-base2-color);
+  font-size: xx-large;
+  border-radius: 10px;
+  /* margin: 20px; */
+  /* padding-top: 0.2cm;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  padding-bottom: 0.2cm; */
+  text-align: left;
+
+}
+
+a {
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.divlight a {
+  color: var(--solar-orange-color);
+}
+
+.divdark a {
+  /* font-variant: small-caps; */
+  color: var(--solar-base3-color);
+}
+
+.footer {
+  /* color: var(--solar-orange-color); */
+  color: var(--solar-base03-color);
+  background-color: var(--solar-base2-color);
+  font-size: x-large;
+  border-radius: 10px;
+  margin: 20px;
+  padding-top: 0.2cm;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  padding-bottom: 0.2cm;
+  text-align: center;
+}
+
+
+p.footer {
+  margin-bottom: 0.1cm;
+  padding-top: 0.1cm;
+  padding-left: 0.1cm;
+  padding-right: 0.1cm;
+  text-align: center;
+  vertical-align: text-top;
+}
+
+
+.blocklyArea {
+  color: var(--solar-orange-color);
+  width: auto;
+  height: 80%;
+  margin: 20px;
+  border-radius: 10px;
+  padding-top: 0.2cm;
+  padding-left: 0.5cm;
+  padding-right: 0.5cm;
+  padding-bottom: 0.2cm;
+}
+
+#blocklyDiv {
+  position: absolute;
+}
+
