@@ -1,0 +1,3 @@
+[submodule "blocklyduino"]
+	path = blocklyduino
+	url = git@github.com:coderdojofirenze/BlocklyDuino.git
