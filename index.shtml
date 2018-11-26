@@ -61,9 +61,14 @@
         nella special issue "Teaching kids to code" di
         <a href="http://theprosegarden.com/">PragPub</a></li>
 
+      <li><a href="js3d/solidi/solidi.html">Solidi rotanti</a>. Dal libro
+        <a href="https://pragprog.com/book/csjava/3d-game-programming-for-kids">
+          "3D Game Programming for Kids"</a> di Chris Strom
+      </li>
+
       <li><a href="js3d/pp_x1_2/pragpub_x1_2.html">Icosaedro rotante</a>. Altro esempio tratto dal libro
-        <a href="https://pragprog.com/book/csjava/3d-game-programming-for-kids">"3D Game Programming for Kids"</a>
-        di Chris Strom</li>
+        "3D Game Programming for Kids"
+      </li>
       <li><a href="js3d/earth3d/Earth.html">Modello di terra ruotante</a>,
         analizzato all'interno del Coderdojo Firenze su base di un esempio
         nel sito della libreria <a href="http://threejs.org/">three.js</a></li>
